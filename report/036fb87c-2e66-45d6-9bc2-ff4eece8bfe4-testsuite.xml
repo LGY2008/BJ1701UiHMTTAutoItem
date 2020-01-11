@@ -1,0 +1,118 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1578732629221" stop="1578732793257">
+  <name>scripts</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1578732629221" status="passed" stop="1578732638963">
+      <name>F:\PythonItem\hmtq\bj17\UiHMTTAutoItem\scripts.test01_mp_login.TestMpLogin.test_mp_login[13812345678-246810-13812345678]</name>
+      <attachments>
+        <attachment source="858cd4c3-b603-46da-9cc3-ed6f75ed8a21-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="8773e979-42cb-472d-91ce-e2fed058d315-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="MS-20180906QJYH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1578732641638" status="passed" stop="1578732659603">
+      <name>F:\PythonItem\hmtq\bj17\UiHMTTAutoItem\scripts.test02_mp_article.TestMpArticle.test_mp_article[bj-test17-004-\u4eca\u5929\u665a\u4e0a\u7096\u706b\u9505\uff01-\u65b0\u589e\u6587\u7ae0\u6210\u529f]</name>
+      <attachments>
+        <attachment source="1eee1b7c-e683-4db3-8c12-966ec8b8074a-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="b6c88e2b-b46a-4670-b314-96604f3877e9-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="MS-20180906QJYH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1578732662473" status="passed" stop="1578732671986">
+      <name>F:\PythonItem\hmtq\bj17\UiHMTTAutoItem\scripts.test03_mis_login.TestMisLogin.test_mis_login[testid-testpwd123-\u7ba1\u7406\u5458]</name>
+      <attachments>
+        <attachment source="4659098f-9737-43a0-bf4a-15036ff87581-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="46e93332-861e-49b8-b6de-34dfce057b77-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="MS-20180906QJYH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1578732676137" status="failed" stop="1578732711405">
+      <name>F:\PythonItem\hmtq\bj17\UiHMTTAutoItem\scripts.test04_mis_audit.TestMisAudit.test_article_audit</name>
+      <failure>
+        <message>AssertionError: assert False
+ +  where False = &lt;bound method PageMisAudit.page_assert_success of &lt;page.page_mis_audit.PageMisAudit object at 0x03DD84F0&gt;&gt;(title='bj-test17-004', channel='数据库')
+ +    where &lt;bound method PageMisAudit.page_assert_success of &lt;page.page_mis_audit.PageMisAudit object at 0x03DD84F0&gt;&gt; = &lt;page.page_mis_audit.PageMisAudit object at 0x03DD84F0&gt;.page_assert_success
+ +      where &lt;page.page_mis_audit.PageMisAudit object at 0x03DD84F0&gt; = &lt;scripts.test04_mis_audit.TestMisAudit object at 0x03E95AB0&gt;.audit</message>
+        <stack-trace>self = &lt;scripts.test04_mis_audit.TestMisAudit object at 0x03E95AB0&gt;
+title = 'bj-test17-004', channel = '数据库'
+
+    def test_article_audit(self, title=page.article_title, channel=page.article_channel):
+        # 调用审核业务方法
+        self.audit.page_mis_audit(title, channel)
+        try:
+            # 断言
+&gt;           assert self.audit.page_assert_success(title="bj-test17-004", channel="数据库")
+E           AssertionError: assert False
+E            +  where False = &lt;bound method PageMisAudit.page_assert_success of &lt;page.page_mis_audit.PageMisAudit object at 0x03DD84F0&gt;&gt;(title='bj-test17-004', channel='数据库')
+E            +    where &lt;bound method PageMisAudit.page_assert_success of &lt;page.page_mis_audit.PageMisAudit object at 0x03DD84F0&gt;&gt; = &lt;page.page_mis_audit.PageMisAudit object at 0x03DD84F0&gt;.page_assert_success
+E            +      where &lt;page.page_mis_audit.PageMisAudit object at 0x03DD84F0&gt; = &lt;scripts.test04_mis_audit.TestMisAudit object at 0x03E95AB0&gt;.audit
+
+scripts\test04_mis_audit.py:35: AssertionError</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="87885754-8d73-46dc-b637-9ea0a86be0a1-attachment.png" title="错误原因：" type="image/png"/>
+        <attachment source="dd21eaa9-46d7-454b-a1d5-c86723ed6173-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="6deb9ed7-ed86-401e-82d5-2bdfe41579a4-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="MS-20180906QJYH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1578732719237" status="passed" stop="1578732748918">
+      <name>F:\PythonItem\hmtq\bj17\UiHMTTAutoItem\scripts.test05_app_login.TestAppLogin.test_app_login</name>
+      <attachments>
+        <attachment source="2ce0ec9d-087d-43af-b07a-d979f77217a7-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="661df64f-bdd8-4861-9e56-a085a8a3a7cd-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="MS-20180906QJYH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1578732751431" status="passed" stop="1578732793257">
+      <name>F:\PythonItem\hmtq\bj17\UiHMTTAutoItem\scripts.test06_app_article.TestAppArticle.test_app_article</name>
+      <attachments>
+        <attachment source="e3115c8d-ba09-45c6-bec2-d0dcca1366e6-attachment.txt" title="Captured log setup" type="text/plain"/>
+        <attachment source="78e5add5-7dca-49da-8faf-dd4a40e6773d-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4848-MainThread"/>
+        <label name="host" value="MS-20180906QJYH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
